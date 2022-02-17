@@ -27,7 +27,6 @@ function createNewMember() {
     }
 
     team.push(newMember);
-    
     createCard(newMember.name, newMember.role, newMember.image);
 }
 
@@ -65,10 +64,14 @@ const team = [
     },
   ];
 
-const buttonNewMember = document.getElementById('addMemberButton');
-const teamWrapper = document.querySelector('.team-container');
-
+const teamWrapper = document.querySelector('.team-container');   // RECUPERO IL WRAPPER DELLE CARD
+const buttonNewMember = document.getElementById('addMemberButton');   // RECUPERO IL BOTTONE PER I NUOVI MEMBRI
+ 
 // AZIONI
-createData(team);
+createData(team);   // CREAZIONE PRIME 6 CARD DEL TEAM
 
-buttonNewMember.addEventListener('click', createNewMember);
+buttonNewMember.addEventListener('click', createNewMember);   // FUNZIONE ON CLICK PER NUOVO MEMBRO DEL TEAM
+
+
+
+
